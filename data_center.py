@@ -5,8 +5,8 @@ import numpy as np
 from shutil import copyfile
 
 def original_classes_division():
-	train_data_folder_path = os.path.join("database", "train", "train")
-	train_root_folder_path = os.path.join("database", "train")
+	train_data_folder_path = os.path.join("train")
+	train_root_folder_path = os.path.join("database")
 	for each_file in os.listdir(train_data_folder_path):
 		each_img = cv2.imread(os.path.join(train_data_folder_path, each_file))
 		print(each_file)
@@ -60,4 +60,5 @@ def split_CV(root_folder_path, train_rates=0.8):
 
 
 if __name__ == "__main__":
-	split_CV(os.path.join("database", "train"))
+	# original_classes_division()
+	split_CV(os.path.join("database"))

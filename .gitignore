@@ -1,3 +1,8 @@
 database
 models
 .ipynb_checkpoints/
+*.zip
+database/
+models
+test/
+*.pem
