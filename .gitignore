@@ -6,3 +6,4 @@ database/
 models
 test/
 *.pem
+*.csv
